@@ -4,13 +4,15 @@ import ShowUser from "./components/ShowUser";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+import './App.scss';
+
+
 const API_URL = "https://api.github.com/users/";
 
 function App() {
     const [username, setUsername] = useState("")
     const [user, setUser] = useState({});
     const [repos, setRepos] = useState([]);
-
 
     // Get Username from Github
     useEffect(() => {
@@ -45,6 +47,7 @@ function App() {
                 );
         }
     }, [username]);
+
 
     // Form submit
     const searchUsername = (user) => {

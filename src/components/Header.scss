@@ -1,0 +1,9 @@
+@import './colors';
+
+header {
+    background-color: $color1;
+    color: $color2;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}

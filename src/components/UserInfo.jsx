@@ -1,9 +1,15 @@
 import React from 'react'
+import './UserInfo.scss';
 
 function UserInfo({user}) {
+    
   return (
-    <div>
-        <img src={user.avatar_url} alt='user_avatar'></img>
+    <div className='userInfo'>
+        <img
+            src={user.avatar_url}
+            alt="user_avatar"
+            style={{display: user.id ? 'block' : 'none' }}>
+        </img>
         <h3>
             {user.login}
         </h3>
