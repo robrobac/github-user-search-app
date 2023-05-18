@@ -3,6 +3,10 @@ import './UserRepos.scss';
 
 function UserRepos({repos}) {
 
+    if(!repos.message === "Not Found") {
+        return
+    }
+
   return repos.map((repo) => (
     <li key={repo.id}>
         <a href={repo.html_url} target='blank'>

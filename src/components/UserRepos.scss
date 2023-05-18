@@ -1,25 +1,14 @@
 @import './colors';
 
 .userRepos {
-    color: $color2;
-    padding-bottom: 50px;
-    overflow-x: auto;
+    color: $text1;
 
     li {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
         list-style: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.384);
-        padding: 10px;
 
         a {
-            font-size: 1.7em;
-            font-weight: 600;
             text-decoration: none;
-            color: cadetblue;
-
+            color: $linkColor;
         }
     }
 }

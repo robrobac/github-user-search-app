@@ -1,15 +1,10 @@
 @import './colors';
 
 .userInfo {
-    padding: 50px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    color: $color2;
+    color: $text1;
 
     img {
-        height: 300px;
+        max-width: 300px;
         border-radius: 300px;
     }
 }

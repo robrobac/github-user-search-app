@@ -1,9 +1,7 @@
 @import './colors';
 
 footer {
-    text-align: center;
     width: 100%;
-    background-color: $color1;
-    color: $color2;
-    padding: 10px;
+    background-color: $headerFooterBG;
+    color: $text1;
 }

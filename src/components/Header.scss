@@ -1,9 +1,7 @@
 @import './colors';
 
 header {
-    background-color: $color1;
-    color: $color2;
-    padding: 10px;
-    text-align: center;
+    background-color: $headerFooterBG;
+    color: $text1;
     width: 100%;
 }

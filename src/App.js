@@ -21,8 +21,14 @@ function App() {
                 .then((result) => result.json())
                 .then(
                     (result) => {
-                        setUser(result);
-                        console.log("User:", result)
+                        if (result.message === "Not Found") {
+                            setUser(result);
+                            console.log("No user found:", result)
+                        } else {
+                            setUser(result);
+                            console.log("User:", result)
+                        }
+
                     },
                     (error) => {
                         console.log(error);
@@ -38,8 +44,13 @@ function App() {
                 .then((result) => result.json())
                 .then(
                     (result) => {
-                        setRepos(result);
-                        console.log("Repos:", result)
+                        if (result.message === "Not Found") {
+                            setRepos([]);
+                            console.log("No Repos found:", result)
+                        } else {
+                            setRepos(result);
+                            console.log("Repos:", result)
+                        }
                     },
                     (error) => {
                         console.log(error);
@@ -47,6 +58,27 @@ function App() {
                 );
         }
     }, [username]);
+
+
+    // Dinamical App component height
+    const [viewportHeight, setViewportHeight] = useState(window.innerHeight);
+
+    const height100 = {
+        height: viewportHeight,
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            setViewportHeight(window.innerHeight);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        return () => {
+            window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+    // End of Dinamical App component height
 
 
     // Form submit
@@ -60,10 +92,10 @@ function App() {
     }
 
     return (
-        <div className="App">
+        <div className="App" style={height100}>
             <Header />
+            <SearchForm onSubmit={searchUsername} />
             <main>
-                <SearchForm onSubmit={searchUsername} />
                 <ShowUser user={user} repos={repos} />
             </main>
             <Footer />
