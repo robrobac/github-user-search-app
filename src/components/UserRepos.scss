@@ -1,6 +1,7 @@
 @import './colors';
 
 .repos {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
@@ -20,6 +21,7 @@
 }
 
 .repoLink {
+    width: fit-content;
     font-size: 14px;
     font-weight: 600;
     color: $linkColor;

@@ -7,14 +7,49 @@
     .userImage {
         max-width: 300px;
         border-radius: 300px;
+        margin-bottom: 8px;
     }
-
-    .username {}
 
     .login {
         color: $text2;
+        font-weight: 100;
+        font-size: 12pt;
+        margin-bottom: 16px;
     }
 
-    .bio {}
+    .bio {
+        font-size: 12pt;
+        margin-bottom: 16px;
+    }
+
+    .profileLink {
+        text-align: center;
+
+        text-decoration: none;
+        color: $text1;
+        font-size: 13px;
+        font-weight: bold;
+
+        p {
+            width: 300px;
+            padding: 10px 0;
+            background-color: $profileButtonBG;
+
+            border: 1px solid $repoBorder;
+            border-radius: 6px;
+        }
+    }
+
+    .follow {
+        font-size: 12px;
+        display: flex;
+        gap: 8px;
+        margin: 16px 0;
+    }
+
+    .location {
+        font-weight: 600;
+        font-size: 14px;
+    }
 
 }
