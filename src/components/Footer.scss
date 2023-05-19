@@ -2,6 +2,13 @@
 
 footer {
     width: 100%;
+    padding: 16px;
+    font-size: 0.7rem;
+    text-align: center;
     background-color: $headerFooterBG;
-    color: $text1;
+    color: $text2;
+
+    box-shadow: 0px -8px 21px 13px $mainBG;
+    -webkit-box-shadow: 0px -8px 21px 13px $mainBG;
+    -moz-box-shadow: 0px -8px 21px 13px $mainBG;
 }

@@ -4,7 +4,7 @@ import './Header.scss';
 function Header() {
   return (
     <header>
-        <h1>Search GitHub User</h1>
+        <h1>GitHub User Search</h1>
     </header>
   )
 }

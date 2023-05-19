@@ -1,5 +1,7 @@
 import React from 'react'
 import './UserInfo.scss';
+import PeopleIcon from '@mui/icons-material/People';
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 
 function UserInfo({user}) {
     if(user.login) {
@@ -17,6 +19,7 @@ function UserInfo({user}) {
                     <p>View Profile</p>
                 </a>
                 <div className='follow'>
+                    <PeopleIcon className='followIcon'/>
                     <p>
                         <span>{user.followers} </span>
                         {user.followers === 1 ? "follower" : "followers"}
@@ -24,7 +27,9 @@ function UserInfo({user}) {
                     -
                     <p><span>{user.following} </span>following</p>
                 </div>
-                <p className='location'>{user.location}</p>
+                <p className='location'>
+                    <LocationOnOutlinedIcon className='locationIcon'/>
+                    {user.location}</p>
             </div>
           )
     }

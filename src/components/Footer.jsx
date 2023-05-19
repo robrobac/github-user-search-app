@@ -5,7 +5,7 @@ import './Footer.scss';
 function Footer() {
   return (
     <footer>
-        <p>footer</p>
+        <p>Footer to be edited</p>
     </footer>
   )
 }

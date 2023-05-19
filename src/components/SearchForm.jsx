@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './SearchForm.scss';
 
+import SearchIcon from '@mui/icons-material/Search';
+
 function SearchForm({onSubmit}) {
     const [inputValue, setInputValue] = useState("");
 
@@ -18,13 +20,16 @@ function SearchForm({onSubmit}) {
   return (
     <div className='searchForm'>
         <form onSubmit={handleFormSubmit}>
+            
+            <label>
+            <SearchIcon className='searchIcon'/>
             <input
             value={inputValue}
             type='text'
-            placeholder='Search Username'
+            placeholder='Search Username and press enter'
             onChange={handleInputChange}
             autoFocus/>
-            <button>Search</button>
+            </label>
         </form>
     </div>
   )

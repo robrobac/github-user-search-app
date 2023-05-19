@@ -30,3 +30,46 @@
     }
 
 }
+
+// Scrollbar Styling
+::-webkit-scrollbar {
+    cursor: pointer;
+    width: 5px;
+
+}
+
+::-webkit-scrollbar-track {
+    background: $mainBG;
+}
+
+::-webkit-scrollbar-thumb {
+    background: $text2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+
+    opacity: 5;
+    background: #5c6169;
+}
+
+// Firefox Scrollbar Styling
+main {
+    scrollbar-width: thin;
+}
+
+main {
+    scrollbar-color: $text2 $mainBG;
+}
+
+main::-moz-scrollbar-track {
+    background: $mainBG;
+}
+
+main::-moz-scrollbar-thumb {
+    background: $text2;
+}
+
+main::-moz-scrollbar-thumb:hover {
+    opacity: 0.5;
+    background: #5c6169;
+}

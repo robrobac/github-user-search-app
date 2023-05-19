@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import './App.scss';
+import './responsive.scss';
 
 
 const API_URL = "https://api.github.com/users/";

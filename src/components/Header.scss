@@ -4,4 +4,9 @@ header {
     background-color: $headerFooterBG;
     color: $text1;
     width: 100%;
+    font-size: 0.8rem;
+    text-align: center;
+    padding-top: 18px;
+
+    z-index: 2;
 }

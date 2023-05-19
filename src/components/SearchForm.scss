@@ -1,7 +1,52 @@
 @import './colors';
 
+
 .searchForm {
-    text-align: center;
     width: 100%;
+    padding: 16px;
     background-color: $headerFooterBG;
+    display: flex;
+    justify-content: center;
+
+    z-index: 1;
+
+    box-shadow: 0px 8px 21px 13px $mainBG;
+    -webkit-box-shadow: 0px 8px 21px 13px $mainBG;
+    -moz-box-shadow: 0px 8px 21px 13px $mainBG;
+
+    form {
+        width: 300px;
+        max-width: 300px;
+        border: 1px solid $repoBorder;
+        border-radius: 4px;
+
+        padding: 5px;
+
+        label {
+            display: flex;
+            align-items: center;
+
+            input {
+                width: 100%;
+                background-color: $headerFooterBG;
+                color: $text1;
+                border: none;
+                padding-left: 5px;
+
+                &::placeholder {
+                    color: $text2;
+                }
+
+                &:active,
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+
+        .searchIcon {
+            font-size: 25px;
+            color: $repoBorder;
+        }
+    }
 }

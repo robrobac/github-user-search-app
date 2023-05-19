@@ -5,7 +5,10 @@ import './ShowUser.scss';
 
 function ShowUser({user, repos}) {
     if (user.message === 'Not Found') {
-        return <p className='errorMessage'>no user found</p>
+        return <p className='errorMessage'>
+            There's no user found with that name.
+            Please try again.
+            </p>
     } else {
         return (
             <div className='showUser'>
