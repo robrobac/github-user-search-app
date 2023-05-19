@@ -5,20 +5,16 @@ function UserInfo({user}) {
     
   return (
     <div className='userInfo'>
-        <img
+        <img className='userImage'
             src={user.avatar_url}
             alt="user_avatar"
             style={{display: user.id ? 'block' : 'none' }}>
         </img>
-        <h3>
-            {user.login}
-        </h3>
-        <p>
-        {user.location}
-        </p>
-        <p>
-            {user.bio}
-        </p>
+        <h2 className='username'>{user.name}</h2>
+        <h3 className='login'>{user.login}</h3>
+        <p className='bio'>{user.bio}</p>
+        <p className='location'>{user.location}</p>
+        
     </div>
   )
 }

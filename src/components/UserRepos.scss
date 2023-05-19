@@ -1,14 +1,33 @@
 @import './colors';
 
-.userRepos {
-    color: $text1;
+.repos {
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    li {
-        list-style: none;
+.repoItem {
+    width: 100%;
+    padding: 16px;
+    margin: $repoMargin;
 
-        a {
-            text-decoration: none;
-            color: $linkColor;
-        }
-    }
+    border: 1px solid $repoBorder;
+    border-radius: 6px;
+
+    display: flex;
+    flex-direction: column;
+    flex-basis: $repoWidth;
+    gap: 16px;
+}
+
+.repoLink {
+    font-size: 14px;
+    font-weight: 600;
+    color: $linkColor;
+    text-decoration: none;
+}
+
+.repoDescription {
+    font-size: 12px;
+    font-weight: 100;
+    color: $text2;
 }

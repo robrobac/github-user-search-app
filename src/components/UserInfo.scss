@@ -1,10 +1,20 @@
 @import './colors';
 
+
 .userInfo {
     color: $text1;
 
-    img {
+    .userImage {
         max-width: 300px;
         border-radius: 300px;
     }
+
+    .username {}
+
+    .login {
+        color: $text2;
+    }
+
+    .bio {}
+
 }

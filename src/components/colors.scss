@@ -1,9 +1,10 @@
-$color1: #161b22;
-$color2: #f0f6fc;
-$color3: #0d1117;
-
-
 $headerFooterBG: #161b22; // Header and Footer background color
 $mainBG: #0d1117; // Main window background color
 $text1: #f0f6fc; // Text Color1
+$text2: #7D8590;
+
 $linkColor: #2f81f7; // link Color
+$repoBorder: #30363d;
+
+$repoMargin: 4px;
+$repoWidth: calc(50% - calc($repoMargin * 2));
